@@ -1,0 +1,38 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_TestLayout.cshtml";
+}
+
+
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Free Easy-Trip Website Template | Contact :: w3layouts</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="~/web/css/style.css" type="text/css" media="all" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="~/web/css/slider.css" rel="stylesheet" type="text/css" media="all" />
+</head>
+<body>
+
+    <div class="header-bottom">
+
+    </div>
+    <div class="contact">
+        <div class="wrap">
+            <div class="contact-top">
+                <h3>Benimle İletişime Geçin</h3>
+                <p>Bloglarım hakkında düşünce ve önerilerinize bekliyorum. Dipnot:sizden gelen pozitif mesajlarda beni aşırı mutlu ediyor.</p>
+            </div>
+           @Html.Action("MesajGonder","İletisim")
+
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+﻿@using TravelTripProje.Models.Siniflar
+@model List<Hakkimizda>
+@{
+    ViewBag.Title = "HakkımızdaGetir";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Hakkımızda</h2>
+
+<br />
+<table class="table table-bordered">
+
+    <tr>
+
+        <th>ID</th>
+        <th>FotoUrl</th>
+        <th>Acıklama</th>
+
+
+
+    </tr>
+    @foreach (var x in Model)
+    {
+        <tr>
+
+            <td>@x.ID</td>
+            <td>@x.FotoUrl</td>
+            <td>@x.Aciklama</td>
+        </tr>
+
+
+    }
+
+</table>
+    <br />
+
+    <div class="alt-not">
+
+        <h1>Kayıt Sürecinde Girdiğiniz Bilgiler Değiştirilemez</h1>
+        <style>
+            .alt-not {
+                text-align: center; /* Notu sayfanın ortasına hizalar */
+                margin-top: 20px; /* Sayfanın altından 20 piksel yukarıda görüntüler */
+                font-size: 10px; /* Yazı boyutunu küçültür  */
+                color: red; /* Yazı rengini kırmızı yapar */
+            }
+        </style>
+
+    </div>
+
+
+
+
+
+
+

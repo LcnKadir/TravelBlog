@@ -1,0 +1,67 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>W3.CSS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        /* Başlık için arka plan rengi */
+        .admin-title {
+            background-color: thistle; /* Yeni arka plan rengi */
+            color: white; /* Yazı rengi  */
+            padding: 15px; /* İstenilen iç boşluk miktarı */
+        }
+    </style>
+
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <div class="w3-sidebar w3-light-grey w3-bar-block" style="width:15%">
+        <h3 class="w3-bar-item" align="middle">Menüler</h3>
+        <ul class="w3-ul w3-border">
+            <li><a href="/Admin/Index/" class="w3-bar-item w3-button">Bloglar</a></li>
+            <li><a href="/Admin/YorumListesi/" class="w3-bar-item w3-button">Yorumlar</a></li>
+            <li><a href="/Admin/MesajListesi/" class="w3-bar-item w3-button">İletişim</a></li>
+            <li><a href="/Admin/HakkımızdaGetir/" class="w3-bar-item w3-button">Hakkımızda</a></li>
+            <li><a href="/Default/Index/" class="w3-bar-item">Siteye Git</a></li>
+            <li><a href="/GirisYap/LogOut/" class="w3-bar-item w3-ul">Çıkış Yap</a></li>
+        </ul>
+    </div>
+
+    <!-- Page Content -->
+    <div style="margin-left:15%">
+
+        <div class="admin-title">
+            <h4>Admin Yönetim Paneli</h4>
+        </div>
+
+        <div class="image-frame">
+            <img src="https://i.hizliresim.com/grwz7rr.jpg" alt="" align="middle" style="width:105px; height:120px">
+
+
+        </div>
+        <style>
+            .image-frame {
+                border: 1px solid #ccc; /* Çerçeve rengi ve kalınlığı */
+                padding: 5px; /* Çerçeve ile içerik arasındaki boşluk */
+                display: inline-block; /* Çerçeveyi görselin yanına yerleştirir */
+            }
+        </style>
+
+        <div class="w3-container">
+
+            @RenderBody()
+
+        </div>
+
+    </div>
+
+</body>
+</html>
